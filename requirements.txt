@@ -1,0 +1,5 @@
+robotframework == 5.0.1
+robotframework-seleniumlibrary == 6.0.0
+selenium == 4.4.0
+virtualenv == 20.16.3
+webdrivermanager == 0.10.0

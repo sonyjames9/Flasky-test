@@ -1,0 +1,8 @@
+*~
+*#
+*.pyc
+instance/*
+flask_env/*
+**.log
+**.html
+**__pycache__
