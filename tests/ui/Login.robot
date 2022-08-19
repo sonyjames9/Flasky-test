@@ -34,6 +34,9 @@ Register a user
 Login with a username and password
     Enter the credentials and login
 
+Validate the registered user
+    Validate the user
+
 Close Demo Page
     Close Browser
 
@@ -49,7 +52,7 @@ Navigate Browser to Register page
 
 Enter the registration details and submit
     Set Selenium Speed      0
-    Enter Username          test_user
+    Enter Username          test_user1
     Enter Password          test_pass
     Enter Firstname         first
     Enter Lastname          last
@@ -58,10 +61,23 @@ Enter the registration details and submit
     Title Should Be         Log In - Demo App
 
 Enter the credentials and login
-    Enter Username          test_user
+    Go To                   ${URL}login
+    Enter Username          test_user1
     Enter Password          test_pass
     Click Login
     Title Should Be         User Information - Demo App
+    Log             "test"
+    Log             "test"
+
+
+Validate the user
+    Go To                   ${URL}user
+    Set Selenium Speed      2
+    ${uname}   =    Get Text        ${username}
+    ${uname.strip()}
+    Log             ${uname}
+    Should Be True ${uname} == 'test_user1'
+
 
 Enter Username
     [Arguments]    ${username}

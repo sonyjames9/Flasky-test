@@ -2,4 +2,6 @@ robotframework == 5.0.1
 robotframework-seleniumlibrary == 6.0.0
 selenium == 4.4.0
 virtualenv == 20.16.3
-webdrivermanager == 0.10.0
+requests == 2.28.1
+pytest == 7.1.2
+allure-pytest == 2.9.45
