@@ -38,10 +38,10 @@ def add_users():
 
 
 response = get_users()
-response = get_token(username,password)
-response = get_specific_user(username)
-response = update_users(username)
-response = add_users()
+# response = get_token(username,password)
+# response = get_specific_user(username)
+# response = update_users(username)
+# response = add_users()
 
 print(response.status_code)
 print(response.json())

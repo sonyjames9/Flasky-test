@@ -2,7 +2,7 @@ url = 'http://localhost:8080/'
 auth_url = url + "api/auth/token"
 users_url = url + "api/users"
 
-username = "test_user5"
+username = "test_user1"
 password = "test_pass"
 
 update_payload = {
@@ -12,9 +12,9 @@ update_payload = {
 }
 
 register_user_payload = {
-    "username": "test_user19",
-    "password": "test_pass",
-    "firstname": "first",
-    "lastname": "last",
-    "phone": 1234567890
+  "username": "test_user20",
+  "password": "test_pass",
+  "firstname": "first",
+  "lastname": "last",
+  "phone": 1234567890
   }
