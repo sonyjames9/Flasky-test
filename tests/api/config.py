@@ -18,3 +18,19 @@ register_user_payload = {
   "lastname": "last",
   "phone": 1234567890
   }
+
+new_user_payload = {
+  "username": "test_user1",
+  "password": "test_pass",
+  "firstname": "first",
+  "lastname": "last",
+  "phone": 1234567890
+}
+
+new_user_payload2 = {
+  "username": "test_user1",
+  "password": "test_pass",
+  "firstname": "first",
+  "lastname": "last",
+  "phone": 1234567890
+}

@@ -2,13 +2,18 @@ from tests.api.request_functions.flask_api_requests import *
 from tests.api.config import *
 
 
+def test_add_user():
+  response = add_user(new_user_payload)
+  assert response.status_code == 201
+  assert response.json()['status'] == 'SUCCESS'
+  assert response.json()['message'] == 'Created'
+
+
 def test_get_users():
   response = get_users()
   arr_users = response.json()['payload']
   assert response.status_code == 200
-  assert 'root' in arr_users
-  assert 'test_user1' in arr_users
-
+  assert 'test_user10' in arr_users
   assert 'test_user1' in arr_users
 
 
@@ -30,9 +35,6 @@ def test_get_token():
   token = response.json()['token']
   assert len(token) >= 50
 
-  # response = update_users(username)
-  # response = add_users()
-
 
 def test_update_users():
   response = update_users(username)
@@ -46,8 +48,3 @@ def test_update_users():
   assert '1234567890' in user_info['phone']
 
 
-def test_add_user():
-  response = add_user()
-  assert response.status_code == 201
-  assert response.json()['status'] == 'SUCCESS'
-  assert response.json()['message'] == 'Created'

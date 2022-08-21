@@ -32,9 +32,9 @@ def update_users(user):
   return response
 
 
-def add_user():
+def add_user(payload = register_user_payload):
   headers = {'Content-Type': 'application/json'}
-  response = requests.post(users_url, headers=headers, data=json.dumps(register_user_payload))
+  response = requests.post(users_url, headers=headers, data=json.dumps(payload))
   return response
 
 
@@ -42,9 +42,9 @@ response = get_users()
 # response = update_users(username)
 # response = add_users()
 
-# print(response.status_code)
-# print(response.json())
-# print(response.headers)
+print(response.status_code)
+print(response.json())
+print(response.headers)
 #
 # token = return_token(username, password)
 # print(token)
