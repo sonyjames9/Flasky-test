@@ -45,6 +45,8 @@
 
 
 ###Docker setup
+-- This was build using windows, should work for linux as well; follow the below commands to build the image and run the command
+
 * docker build . -t flask-test
 * docker run --name flask-test --rm -it flask-test flask_env/bin/pytest tests/api/tests_api/test.py --html=./logs/pytest_report.html
   
