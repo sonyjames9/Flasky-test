@@ -15,9 +15,6 @@
 #### This repo is supposed to be run on Py3.7, please feel free to use virutal env setup for this project
 #### This repo was run windows command line
 
-- This repo has 2 tests
-    * UI
-    * API
     
 - Virtual env setup
   * python.exe -m virtualenv ./flask_env
@@ -26,9 +23,14 @@
   * Once virutal env is activated, the command line should look something like 
     * "(flask_env) C:\Git\P\sjy\Flask\Flasky-test>"
     
+- This repo has 2 tests
+    * UI
+    * API
 
 * UI - Run the UI tests
     * robot tests/ui/Login.robot
+    * robot --timestampoutputs --log robot_log.html --outputdir logs --report NONE tests/ui/Login.robot
+    * robot --timestampoutputs --log robot_log.html --outputdir logs --include smoke tests/ui/Login.robot
     
 * API - Run the API tests
     * flask_env\Scripts\python.exe path/flask_api_requests.py
