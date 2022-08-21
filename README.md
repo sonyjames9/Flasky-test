@@ -42,5 +42,10 @@
     * flask_env/Scripts/pytest.exe tests/api/tests_api/test.py --html=logs/pytest_report.html
 
     ![alt text](https://github.com/sonyjames9/Flasky-test/blob/main/logs/pytest.png)
+
+
+###Docker setup
+* docker build . -t flask-test
+* docker run --name flask-test --rm -it flask-test flask_env/bin/pytest tests/api/tests_api/test.py --html=./logs/pytest_report.html
   
 
