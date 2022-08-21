@@ -13,7 +13,7 @@ def test_get_users():
   response = get_users()
   arr_users = response.json()['payload']
   assert response.status_code == 200
-  assert 'test_user10' in arr_users
+  assert 'test_user1234' in arr_users
   assert 'test_user1' in arr_users
 
 

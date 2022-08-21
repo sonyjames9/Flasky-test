@@ -1,4 +1,4 @@
-url = 'http://localhost:8080/'
+url = 'http://192.168.0.193:8080/'
 auth_url = url + "api/auth/token"
 users_url = url + "api/users"
 
@@ -20,7 +20,7 @@ register_user_payload = {
   }
 
 new_user_payload = {
-  "username": "test_user1",
+  "username": "test_user2345",
   "password": "test_pass",
   "firstname": "first",
   "lastname": "last",
@@ -28,7 +28,7 @@ new_user_payload = {
 }
 
 new_user_payload2 = {
-  "username": "test_user1",
+  "username": "test_user134",
   "password": "test_pass",
   "firstname": "first",
   "lastname": "last",
