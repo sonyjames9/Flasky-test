@@ -38,7 +38,7 @@
   ![alt text](https://github.com/sonyjames9/Flasky-test/blob/main/logs/sample_report.png)
 
 * API - Run the API tests
-    * flask_env\Scripts\python.exe path/flask_api_requests.py
+    * flask_env/Scripts/pytest.exe path/flask_api_requests.py
     * flask_env/Scripts/pytest.exe tests/api/tests_api/test.py --html=logs/pytest_report.html
 
     ![alt text](https://github.com/sonyjames9/Flasky-test/blob/main/logs/pytest.png)
