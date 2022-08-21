@@ -12,7 +12,7 @@ update_payload = {
 }
 
 register_user_payload = {
-  "username": "test_user20",
+  "username": "test_user10",
   "password": "test_pass",
   "firstname": "first",
   "lastname": "last",

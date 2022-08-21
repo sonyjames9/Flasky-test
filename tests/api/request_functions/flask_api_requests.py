@@ -2,6 +2,7 @@ import json
 import requests
 from tests.api.config import *
 
+
 def get_users():
   response = requests.get(users_url)
   return response
@@ -17,7 +18,7 @@ def return_token(username, password):
 
 
 def get_specific_user(user):
-  headers = {'Token': return_token(username, password)}
+  headers = {'Token': return_token(user, password)}
   url = users_url + '/' + user
 
   response = requests.get(url, headers=headers)
@@ -31,21 +32,19 @@ def update_users(user):
   return response
 
 
-def add_users():
+def add_user():
   headers = {'Content-Type': 'application/json'}
   response = requests.post(users_url, headers=headers, data=json.dumps(register_user_payload))
   return response
 
 
 response = get_users()
-# response = get_token(username,password)
-# response = get_specific_user(username)
 # response = update_users(username)
 # response = add_users()
 
-print(response.status_code)
-print(response.json())
-print(response.headers)
-
-token = return_token(username, password)
-print(token)
+# print(response.status_code)
+# print(response.json())
+# print(response.headers)
+#
+# token = return_token(username, password)
+# print(token)
