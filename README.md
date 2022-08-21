@@ -1,6 +1,6 @@
 # Flasky-test
 
-###This is a testing to check the UI and API user registration, update and viewing of users on the flask app 
+## This is a testing to check the UI and API user registration, update and viewing of users on the flask app 
 
 *https://github.com/sonyjames9/Flasky.git*
 
@@ -44,7 +44,7 @@
     ![alt text](https://github.com/sonyjames9/Flasky-test/blob/main/logs/pytest.png)
 
 
-###Docker setup
+## Docker setup
 -- This was build using windows, should work for linux as well; follow the below commands to build the image and run the command
 
 * docker build . -t flask-test
